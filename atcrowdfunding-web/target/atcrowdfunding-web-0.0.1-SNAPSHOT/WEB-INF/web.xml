@@ -11,6 +11,9 @@
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
+    <listener> <!-- 自定义监听器 -->
+        <listener-class>com.atguigu.atcrowdfunding.web.listener.ServerStartupListener</listener-class>
+    </listener>
     
 	<filter>  
 	    <filter-name>HiddenHttpMethodFilter</filter-name>  
